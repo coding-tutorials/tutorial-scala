@@ -1,6 +1,4 @@
-package unit
-
-import org.scalatest._
+import org.scalatest.{FunSpec, ShouldMatchers}
 
 class ExampleTest extends FunSpec with ShouldMatchers {
   describe("some tests") {
@@ -72,7 +70,7 @@ class ExampleTest extends FunSpec with ShouldMatchers {
         someNumber = 7
       }
       
-      def returnNumber() {
+      def returnNumber() = {
         someNumber
       }
     }

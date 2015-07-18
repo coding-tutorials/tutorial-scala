@@ -1,6 +1,7 @@
-name := "Testing Scala"
-version := "1.0"
+name := "Tutorial Scala"
 
-scalaVersion := "2.11.6"
+version := "0.0.1"
+
+scalaVersion := "2.11.7"
 
 libraryDependencies += "org.scalatest" % "scalatest_2.11" % "2.2.4" % "test"
