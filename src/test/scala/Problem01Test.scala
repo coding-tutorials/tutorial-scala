@@ -52,6 +52,12 @@ class Problem01Test extends FunSpec with ShouldMatchers{
 
       Problem07.myFlatten(nestedList) should be(List(1, 2, 3, 4, 5, 6))
     }
+
+    it("should compress a list") {
+      val list = List(1, 1, 2, 3, 3, 3, 4, 5, 5)
+
+      Problem08.myCompress(list) should be(List(1, 2, 3, 4, 5))
+    }
   }
 }
 
