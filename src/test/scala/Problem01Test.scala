@@ -46,6 +46,12 @@ class Problem01Test extends FunSpec with ShouldMatchers{
       Problem06.myIsPalindrome(palindromeList) should be(true)
       Problem06.myIsPalindrome(nonPalindromeList) should be(false)
     }
+
+    it("should flatten a nested list") {
+      val nestedList = List(List(1, 2), List(3, 4, 5), List(6))
+
+      Problem07.myFlatten(nestedList) should be(List(1, 2, 3, 4, 5, 6))
+    }
   }
 }
 
